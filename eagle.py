@@ -110,7 +110,9 @@ class Eagle(Visible):
 		self.target = None
 		
 		if not self.sound_flap:
-			self.sound_flap = pygame.mixer.Sound(self.sound_flap_path)
+			#self.sound_flap = pygame.mixer.Sound(self.sound_flap_path)
+			# flap sound is missing for some reason
+			pass
 		
 	def update(self, delta, view):
 		super(Eagle, self).update(delta)

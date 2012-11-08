@@ -180,8 +180,8 @@ class Salmon(Visible):
 		
 		self.__up_was_pushed = False
 		
-		#print self.rect
-		#print "If we don't have a print here, the fish sometimes disappears!"
+		#print(self.rect)
+		#print("If we don't have a print here, the fish sometimes disappears!")
 	
 		
 	def update(self, delta, view):
@@ -301,7 +301,7 @@ class Salmon(Visible):
 				self.action['up'] = False
 				self.rect.top = max(self.rect.top - 5, 0)
 				if self.rect.top == 0:
-					#print "Winner!"
+					#print("Winner!")
 					score.scorelevel()
 					self.__waterfall = False
 					self.move((0, -self.rect.height * 2))
@@ -370,7 +370,7 @@ class Salmon(Visible):
 				WhirlAni(self.rect.center)
 				self.__isWhirlpool = True
 			else:
-				print "Not enough stamina"
+				print("Not enough stamina")
 			
 	
 	def flop(self, delta):
@@ -381,7 +381,7 @@ class Salmon(Visible):
 				self.__isFlop = True
 				self.__flop_cooldown = self.__flop_interval
 			else:
-				print "Not enough stamina"
+				print("Not enough stamina")
 			
 		#set_animation(self.sprite_flop, .5)
 		
@@ -397,7 +397,7 @@ class Salmon(Visible):
 				self.set_animation(self.sprite_swim, 20)
 				self.sound_dash.play()
 			else:
-				print "Not enough stamina"
+				print("Not enough stamina")
 			
 	
 	def damage(self, amount):

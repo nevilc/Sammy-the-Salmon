@@ -76,7 +76,7 @@ class Map(object):
 					self.image.set_at((i, j + 1), self.color_water)
 					self.image.set_at((i + 1, j + 1), self.color_water)
 					
-					#print "Rock"
+					#print("Rock")
 				elif color == self.color_log:
 					Log(location)
 					
@@ -93,13 +93,13 @@ class Map(object):
 					self.image.set_at((i + 4, j + 1), self.color_water)
 					self.image.set_at((i + 5, j + 1), self.color_water)
 					
-					#print "Log"
+					#print("Log")
 				elif color == self.color_bear:
 					Bear(location)
 				elif color == self.color_eagle:
 					EagleSpawner(location)
 				elif color == self.color_grass:
-					#print "Grass"
+					#print("Grass")
 					pass
 				elif color == self.color_boss:
 					Boss(location)
